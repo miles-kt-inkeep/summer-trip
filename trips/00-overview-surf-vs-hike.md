@@ -52,7 +52,7 @@ flowchart TD
 ## Next steps
 
 1. **Pick lane** (surf vs hike) and a **top route** from above.
-2. **Lock the August week** → pull live airfares (Costa Rica cheapest; Lisbon cheapest in Europe from NYC).
+2. **Lock the August week** → pull live airfares. Concrete mid-August routings (NYC nonstops; SF single-stop) are in [flight examples](../research/flight-examples-mid-august.md) (Costa Rica cheapest/shortest; Lisbon cheapest in Europe from NYC).
 3. **Book the perishable thing first:** surf camp slots, or — critically — **Alta Via 1 rifugios** (months ahead in August).
 4. Confirm group comfort: for Berliner Höhenweg, that everyone is OK with exposure/cables; for Costa Rica, that you'll book coached mornings.
 

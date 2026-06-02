@@ -22,6 +22,11 @@ Full loop is 7–11 days; a 5–6 day core + Geneva fits a week:
 | **Sat** | Geneva — lakefront, Old Town; day-trip to Chamonix/Mont Blanc optional. |
 | **Sun** | Fly home. |
 
+## Getting there (mid-Aug example)
+
+> [!NOTE]
+> **NYC → nonstop JFK→Geneva (GVA)** (SWISS, ~7h50). **SF →** 1 stop via **Zurich** (SFO→ZRH nonstop ~11h15, then ~1h to GVA, layover ~1.5h). Geneva is ~2–3h to Le Châble / Bourg-Saint-Pierre. Example dates Sat Aug 15 → Sat Aug 22; full routings in [flight examples](../research/flight-examples-mid-august.md).
+
 ## Cost Breakdown
 
 Per person, mid-budget. **Switzerland is the priciest option** on food/transport:

@@ -22,6 +22,11 @@ tags: [article, proposal, hiking]
 | **Sat** | **Innsbruck** (alpine city, Nordkette) or continue to **Munich** (biergartens, Marienplatz). |
 | **Sun** | Fly home. |
 
+## Getting there (mid-Aug example)
+
+> [!NOTE]
+> **NYC → nonstop EWR/JFK→Munich (MUC)** (Lufthansa/United, ~8h15). **SF → nonstop SFO→Munich** (~11h05). Then **Munich Airport → Innsbruck by train ~2h13** (frequent), onward to Mayrhofen/Finkenberg. Example dates Sat Aug 15 → Sat Aug 22; full routings in [flight examples](../research/flight-examples-mid-august.md).
+
 ## Cost Breakdown
 
 Per person, mid-budget, half-board in huts:

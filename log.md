@@ -45,3 +45,11 @@ What to log:
 - Wrote research synthesis [surf-independent-and-city-surf](./research/surf-independent-and-city-surf.md) (DIY pricing model + San Sebastián as city-is-the-base option).
 - Added proposal [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md); added "Independent (non-camp) variant" sections to [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md) and [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md); updated [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md) (new row, recommendation, flowchart).
 - Open follow-ups: San Sebastián vs Ericeira as lead DIY pick; pre-book August lessons vs arrange on arrival; shared Airbnb sizing for 2–4.
+
+## 2026-06-02: Concrete mid-August flight examples
+
+- Added concrete flight examples (depart Sat Aug 15 → Sat Aug 22, 2026) avoiding long/multi-stop layovers, for all surf + hike gateways from NYC and SF.
+- Captured external source [logistics-flight-routings](./external-sources/logistics-flight-routings.md) (carrier/route/nonstop facts) and wrote research doc [flight-examples-mid-august](./research/flight-examples-mid-august.md) (dated example itineraries + meet-up notes).
+- Added "Getting there (mid-Aug example)" callouts to all six proposals: [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md), [hike-alta-via-1-dolomites](./trips/hike-alta-via-1-dolomites.md), [hike-tour-des-combins](./trips/hike-tour-des-combins.md), [hike-berliner-hoehenweg](./trips/hike-berliner-hoehenweg.md); linked flight examples from [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md).
+- Key finding: from NYC nearly every gateway is a nonstop; from SF take one well-chosen connection (Newark→Lisbon, Madrid→Bilbao, Zurich→Geneva). SF→Munich and SF→Liberia are nonstop.
+- Open follow-ups: pull live fares for the locked week; verify SFO→LIR and summer SWISS JFK→GVA frequency; decide whether SF folks connect via Newark to share the NYC transatlantic leg.

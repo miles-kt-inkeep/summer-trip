@@ -23,6 +23,11 @@ A 7-night, self-paced shape (book a shared Airbnb in central San Sebastián / Gr
 | **Fri** | Free surf + day trip option: **Biarritz** (45 min, France) or **Bilbao** (Guggenheim, \~1h15). |
 | **Sat** | Final morning surf, return boards; fly home (or 1 night Bilbao). |
 
+## Getting there (mid-Aug example)
+
+> [!NOTE]
+> No US nonstop — one clean stop via **Madrid**. **NYC →** JFK→Madrid→Bilbao (Iberia, layover ~1.5–2.5h). **SF →** SFO→Madrid nonstop (~11h) → Bilbao. Bilbao is ~1h15 by bus to San Sebastián (Biarritz, ~45 min, is an alt gateway). Example dates Sat Aug 15 → Sat Aug 22; full routings in [flight examples](../research/flight-examples-mid-august.md).
+
 ## Cost Breakdown
 
 Per person, mid-budget, shared Airbnb (2–4 people):

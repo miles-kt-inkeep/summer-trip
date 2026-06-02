@@ -23,6 +23,11 @@ tags: [article, proposal, surfing]
 > [!TIP]
 > Surf **mornings**, relax **afternoons** — green-season rain is usually an afternoon event, leaving dry, glassy mornings.
 
+## Getting there (mid-Aug example)
+
+> [!NOTE]
+> Cheapest/shortest international option from both coasts. **NYC → nonstop EWR→Liberia (LIR)** (United, ~5h26). **SF → nonstop SFO→Liberia** (~6h15; verify frequency, else 1 stop via Houston). Then shuttle ~2.5h to Nosara. Example dates Sat Aug 15 → Sat Aug 22; full routings in [flight examples](../research/flight-examples-mid-august.md).
+
 ## Cost Breakdown
 
 Per person, mid-budget, shared room:

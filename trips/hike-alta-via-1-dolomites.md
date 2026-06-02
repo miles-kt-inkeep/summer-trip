@@ -23,6 +23,11 @@ A 5–6 day core (the full route is 6–10 days; shuttle/skip a stage for a 1-we
 | **Sat** | Venice — St. Mark's, Cannaregio, cicchetti crawl, maybe Murano. |
 | **Sun** | Fly home. |
 
+## Getting there (mid-Aug example)
+
+> [!NOTE]
+> **NYC → nonstop JFK→Venice (VCE)** (Delta, daily ~8h35). **SF →** 1 stop via Munich or Zurich (~1.5–2.5h layover). Venice is ~4h to the Lago di Braies trailhead by train/bus (or transfer toward Dobbiaco). Example dates Sat Aug 15 → Sat Aug 22; full routings in [flight examples](../research/flight-examples-mid-august.md).
+
 ## Cost Breakdown
 
 Per person, mid-budget, half-board in rifugios:

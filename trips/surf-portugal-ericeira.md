@@ -24,6 +24,11 @@ A 7-night shape (flexible; SF folks add ~half a travel day vs. NYC):
 
 Tune-able: drop to 5 surf days + 2 full Lisbon days, or add a night in Porto.
 
+## Getting there (mid-Aug example)
+
+> [!NOTE]
+> **NYC → nonstop EWR/JFK→Lisbon** (TAP/United, ~6h50). **SF →** 1 stop, cleanest via Newark (~1.5–2.5h layover). Then ~45 min from LIS to Ericeira. Example dates Sat Aug 15 → Sat Aug 22; full routings in [flight examples](../research/flight-examples-mid-august.md).
+
 ## Cost Breakdown
 
 Per person, mid-budget, shared room:
