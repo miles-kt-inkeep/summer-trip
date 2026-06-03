@@ -20,6 +20,8 @@ Costa Rica surf hostels + locally/Tico-owned surf schools with lesson & rental o
 - **Hostel Nosara** — jungle, **100 m from Playa Guiones**, connected board rental; budget; social yard (ping-pong, volleyball).
 - **Nosara Beach Hostel** — **300 m from Guiones**, budget, shared/private + shared kitchen.
 - **Surf schools (à-la-carte):** Surf Nosara & Nosara CR Surf School — **lessons ~$60/session pay-as-you-go**, board rental **from $25/day** (shortboard/longboard/funboard).
+- **Nosara Tico Surf School** (nosaratico.com / nosara-surf-school.com) — **confirmed locally owned: "100% Tico," bilingual instructors (Luigui, Esteban, Adrian…), ISA & RLSS certified**; private + group lessons with a conditions-reading focus. Strong local Nosara pick to pair with a Guiones hostel.
+- ⚠️ *Green-season access:* Nosara has **poorly maintained roads and frequent bridge washouts** in the rainy season — build in extra transfer buffer for August.
 - *Avoid if prioritizing local:* **Selina Nosara** (~$20/night) is an **international chain.**
 
 ### Playa Sámara (Pacific, Nicoya) — calmest, beginner-friendly bay
@@ -46,6 +48,6 @@ Costa Rica surf hostels + locally/Tico-owned surf schools with lesson & rental o
 
 ## My notes
 
-Honest read: confirming Tico ownership of *hostels* online is hard — most don't say. The reliably local route is **a cheap independent hostel + a Tico-owned surf school** (Tico's in Sámara, Avellanas/Mauricio, Young Visions in Montezuma) for the lesson(s) + rental — which also matches the group's à-la-carte preference. Sámara is the calmest/most beginner-friendly base; Santa Teresa beachfront budget = Zeneida's. Avoid Selina if local ownership matters. Curated comparison in research/.
+Honest read: confirming Tico ownership of *hostels* online is hard — most don't say. The reliably local route is **a cheap independent hostel + a Tico-owned surf school** (Tico's in Sámara, **Nosara Tico Surf School** in Nosara, Avellanas/Mauricio, Young Visions in Montezuma) for the lesson(s) + rental — which also matches the group's à-la-carte preference. Sámara is the calmest/most beginner-friendly base; Santa Teresa beachfront budget = Zeneida's. Avoid Selina if local ownership matters. Curated comparison in research/.
 
 Source links: [Surf Atlas CR surf hostels](https://thesurfatlas.com/costa-rica-surf/surf-hostels-in-costa-rica/), [Tico's Surf School](https://ticossurfschool.com/), [Avellanas Surf School](https://avellanassurfschool.com/), [Iguana Surf](https://iguanasurf.net/costa-rica-surf-camp/), [La Posada surf packages](https://www.laposadasantateresa.com/surfpackages), [Greta's Santa Teresa guide](https://gretastravels.com/surfing-in-santa-teresa/).

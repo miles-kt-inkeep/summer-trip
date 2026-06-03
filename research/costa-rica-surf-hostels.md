@@ -39,6 +39,7 @@ Find **surf hostels in Costa Rica, preferably locally/Tico-owned, with lesson + 
 | School | Town | Lessons | Rentals | Why it's the local pick |
 | --- | --- | --- | --- | --- |
 | **Tico's Surf School** | Playa Sámara | $60 group / $80 private | soft/hard, SUP, boogie | Est. 2008; **ISA-cert instructor-lifeguards**; calmest beginner bay ([src](../external-sources/costa-rica-surf-hostels.md)) |
+| **Nosara Tico Surf School** | Nosara (Guiones) | private + group | yes | **"100% Tico" bilingual instructors, ISA & RLSS certified**; conditions-reading focus ([src](../external-sources/costa-rica-surf-hostels.md)) |
 | **Avellanas Surf School** | Playa Avellanas | beginner→advanced | yes | **Owned by Mauricio**; 20+ years |
 | **Young Visions** | Montezuma | all levels | yes | **"Tico-owned and run,"** #1-rated locally |
 
@@ -57,4 +58,5 @@ This combo (independent hostel + Tico school) typically runs **~$13–25/night l
 - Confirm ownership directly when booking (message the hostel — many family places answer warmly and will tell you).
 - Sámara vs Santa Teresa vs Tamarindo as base — calm/local vs lively vs forgiving-classic.
 - Verify August dorm availability + exact rental prices (and whether the hostel bundles a lesson discount).
+- ⚠️ **Nosara green-season access:** poorly maintained roads + frequent **bridge washouts** in the rainy season — build in transfer buffer (or favor Sámara/Tamarindo, which are easier to reach) for an August trip.
 - Confirm Tico's Surf School rental day-rates (lesson prices known; rental not listed online).
