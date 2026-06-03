@@ -61,3 +61,12 @@ What to log:
 - Wrote new comparison page [surf-camp-comparison](./research/surf-camp-comparison.md) with per-country tables, a value chart, and a group-tuned recommendation (Good People Zarautz à-la-carte for improvers; Dreamsea best-value bundle; Lapoint most polished).
 - Cross-linked it from [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md), and [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md).
 - Open follow-ups: confirm Good People August dates + lesson-pack price; bundle vs à-la-carte group decision; dorm vs private room; CR base (Tamarindo/Santa Teresa/Nosara).
+
+## 2026-06-02: August surf conditions by spot
+
+- Researched August-specific surf conditions (wave size, water temp, wind, consistency, crowds) for Ericeira, Zarautz/San Sebastián, Nosara, Santa Teresa, Tamarindo.
+- Captured external source [surf-conditions-august](./external-sources/surf-conditions-august.md) and wrote research page [surf-conditions-august](./research/surf-conditions-august.md) with a side-by-side table, decision flowchart, and morning-surf rule.
+- Key finding: Costa Rica is peak season / most consistent (29–30 °C, glassy AM offshore; Santa Teresa punchiest); Ericeira gentlest but smaller + colder (Nortada, wetsuit, AM only); San Sebastián riskiest for flat days (summer = flat season).
+- Threaded "August conditions" notes into [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md); linked from [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md) and [surf-camp-comparison](./research/surf-camp-comparison.md).
+- Note: edit_document returned a spurious frontmatter-intersect error on one parallel edit; succeeded on retry.
+- Open follow-ups: check live forecasts ~10 days out once dates lock; confirm flat-day backup spots (Ericeira breaks; Mundaka/Sopelana from San Sebastián).
