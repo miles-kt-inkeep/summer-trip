@@ -85,3 +85,7 @@ What to log:
 - Added green-season caveat: Nosara has poor roads + frequent bridge washouts in the rainy season (August transfer buffer; Sámara/Tamarindo easier to reach).
 - Open follow-ups: if the user shares Reddit thread URLs/text, ingest them directly; otherwise rely on guide + operator sources.
 
+## 2026-06-03: Test file
+
+- Created scratch [test.md](./test.md) at the project root to try out the OK editor in web view; opened the preview to it. No real trip content — safe to delete.
+
