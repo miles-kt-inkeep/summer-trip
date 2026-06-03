@@ -15,4 +15,4 @@ This is a test document created to try out the Open Knowledge editor in web view
 
 - [x] Document created via the OK MCP write path
 - [ ] Edited live in the browser preview
-- [ ] Deleted when no longer needed
+- [x] Deleted when no longer needed
