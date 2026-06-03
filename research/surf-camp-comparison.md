@@ -12,7 +12,7 @@ tags: [research, provisional, surfing]
 
 ## Question
 
-Compare specific **surf camp options in Portugal, Spain, and Costa Rica** — offerings, price, level fit, and vibe — so the group can pick one (or decide a camp isn't needed). Companion to [surf options](./surf-trip-options.md), [independent surf](./surf-independent-and-city-surf.md), and [August surf conditions](./surf-conditions-august.md).
+Compare specific **surf camp options in Portugal, Spain, and Costa Rica** — offerings, price, level fit, and vibe — so the group can pick one (or decide a camp isn't needed). Companion to [surf options](./surf-trip-options.md), [independent surf](./surf-independent-and-city-surf.md), [August surf conditions](./surf-conditions-august.md), and [Costa Rica surf hostels](./costa-rica-surf-hostels.md) (locally-owned, budget end).
 
 ## Sources cited
 
