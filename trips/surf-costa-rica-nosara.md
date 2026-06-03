@@ -8,7 +8,7 @@ tags: [article, proposal, surfing]
 
 ## Overview
 
-**Surf week on Costa Rica's Nicoya coast (Nosara, with Santa Teresa as a punchier alt).** The warmest, cheapest, and closest international surf option from both NYC and SF — boardshorts water (~27 °C) and famously consistent Pacific waves. The honest caveat: **August is green-season with bigger south swells that favor intermediates**, so this is the more *ambitious* surf pick. It works well for an improving group that wants to be pushed, especially based in **Nosara/Playa Guiones**, which is versatile enough that "there's usually a smaller peak working somewhere." Evidence: [surf options research](../research/surf-trip-options.md).
+**Surf week on Costa Rica's Nicoya coast (Nosara, with Santa Teresa as a punchier alt).** The warmest, cheapest, and closest international surf option from both NYC and SF — boardshorts water (~27 °C) and famously consistent Pacific waves. The honest caveat: **August is green-season with bigger south swells that favor intermediates**, so this is the more *ambitious* surf pick. It works well for an improving group that wants to be pushed, especially based in **Nosara/Playa Guiones**, which is versatile enough that "there's usually a smaller peak working somewhere." Evidence: [surf options research](../research/surf-trip-options.md). **August conditions:** peak season — the **most consistent** of all options, glassy offshore mornings, water 29–30 °C (no wetsuit); Nosara/Tamarindo forgiving, Santa Teresa punchier (sets to 5 ft) — see [August surf conditions](../research/surf-conditions-august.md).
 
 ## Itinerary
 
@@ -45,7 +45,7 @@ Sources: [surf research](../research/surf-trip-options.md) → [Costa Rica seaso
 
 ## Independent (non-camp) variant
 
-Costa Rica is very DIY-friendly: rent a place in Nosara/Santa Teresa, **rent a board ($15–25/day)**, surf the mornings, and book **1–2 private lessons ($50–70 for 2 h, hotel pickup common)** to handle August's bigger swells. Surf services land around **$190–290/person** for the week. See [independent surf research](../research/surf-independent-and-city-surf.md). Given the punchier August conditions, a couple of *coached* sessions are especially worthwhile here even without a camp.
+Costa Rica is very DIY-friendly: rent a place in Nosara/Santa Teresa, **rent a board ($15–25/day)**, surf the mornings, and book **1–2 private lessons ($50–70 for 2 h, hotel pickup common)** to handle August's bigger swells. Surf services land around **$190–290/person** for the week. See [independent surf research](../research/surf-independent-and-city-surf.md). Given the punchier August conditions, a couple of *coached* sessions are especially worthwhile here even without a camp. If you'd rather bundle it, the [surf camp comparison](../research/surf-camp-comparison.md) covers Dreamsea ($445/wk incl. 5 lessons + yoga + meals), Lapoint Santa Teresa (from €745), and Safari Surf (Nosara).
 
 > [!WARNING]
 > August favors intermediates here. Book **coached/guided** mornings rather than going DIY, and prefer **Nosara/Guiones** (versatile, mellower inside) over Santa Teresa (punchier) unless the group wants the challenge + livelier nightlife. No true "big city" finish — San José is functional, not the draw; the trade is warmth, cost, and wildlife.

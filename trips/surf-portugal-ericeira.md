@@ -8,7 +8,7 @@ tags: [article, proposal, surfing]
 
 ## Overview
 
-**Surf week in Ericeira, Portugal, finishing in Lisbon.** Ericeira is Europe's only World Surfing Reserve and a dedicated surf town 40 minutes from Lisbon. August brings smaller, manageable, consistent waves — the gentlest "classroom" of the realistic options — backed by dense surf-camp coaching infrastructure. This is the **top surf pick** for an advancing-beginner group: you get real coaching (2 sessions/day), level-appropriate waves, and a world-class city finish with almost no extra travel. Evidence: [surf options research](../research/surf-trip-options.md).
+**Surf week in Ericeira, Portugal, finishing in Lisbon.** Ericeira is Europe's only World Surfing Reserve and a dedicated surf town 40 minutes from Lisbon. August brings smaller, manageable, consistent waves — the gentlest "classroom" of the realistic options — backed by dense surf-camp coaching infrastructure. This is the **top surf pick** for an advancing-beginner group: you get real coaching (2 sessions/day), level-appropriate waves, and a world-class city finish with almost no extra travel. Evidence: [surf options research](../research/surf-trip-options.md). **August conditions:** small, forgiving whitewater at Foz do Lizandro; **surf mornings** before the Nortada onshore wind; water 20–22 °C, wetsuit (can drop to 15 °C on a hard Nortada) — see [August surf conditions](../research/surf-conditions-august.md).
 
 ## Itinerary
 
@@ -49,4 +49,4 @@ Sources: [surf research](../research/surf-trip-options.md) → [Ericeira camps](
 Don't want a full camp? Base in Ericeira (or **Lisbon**, surfing Costa da Caparica 20 min away) in your own Airbnb/guesthouse, **rent boards for the week (~€15–20/day, wetsuit incl.)**, surf the gentle summer beach breaks yourselves, and book **1–2 drop-in/private lessons (~€40 each)** to fix specifics. Surf services drop to **~$120–165/person** for the week (vs. €500–800 for a camp). See [independent surf research](../research/surf-independent-and-city-surf.md). This is often the better-value choice for an advancing-beginner group — and basing in Lisbon folds the city in for free.
 
 > [!NOTE]
-> Camps to compare: **Lapoint**, **Rapture**, **Ericeira Surf Camp**, **Hostel & Surfcamp 55**. Book the specific August week early; confirm intermediate-coaching track (not pure beginner). Atlantic water needs a wetsuit — camps provide.
+> Camps to compare (offerings + pricing side-by-side): see the **[surf camp comparison](../research/surf-camp-comparison.md)** — **Lapoint** (bundle), **Rapture** (à-la-carte, €40/lesson), **Ericeira Surf Camp** (customizable). Book the specific August week early; confirm intermediate-coaching track (not pure beginner). Atlantic water needs a wetsuit — camps provide.
