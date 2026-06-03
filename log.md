@@ -74,7 +74,7 @@ What to log:
 
 - Researched budget, locally/Tico-owned surf hostels + schools in Costa Rica with lesson + rental options (Santa Teresa, Nosara, Sámara, Tamarindo, Montezuma).
 - Captured external source [costa-rica-surf-hostels](./external-sources/costa-rica-surf-hostels.md) and wrote research page [costa-rica-surf-hostels](./research/costa-rica-surf-hostels.md) with hostel + confirmed-Tico-school tables and an ownership-confidence column.
-- Key finding: hostel ownership is hard to verify online (Selina = chain); the reliably-local route is a small independent hostel + a confirmed Tico-owned school (Tico's/Sámara, Avellanas/Mauricio, Young Visions/Montezuma). Sámara = gentlest base; Zeneida's (Santa Teresa) = ~$13 beachfront budget.
+- Key finding: hostel ownership is hard to verify online (Selina = chain); the reliably-local route is a small independent hostel + a confirmed Tico-owned school (Tico's/Sámara, Avellanas/Mauricio, Young Visions/Montezuma). Sámara = gentlest base; Zeneida's (Santa Teresa) = \~$13 beachfront budget.
 - Cross-linked from [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md) and [surf-camp-comparison](./research/surf-camp-comparison.md).
 - Open follow-ups: confirm ownership + August availability + rental day-rates directly when booking; choose base (Sámara/Santa Teresa/Tamarindo).
 
@@ -84,9 +84,4 @@ What to log:
 - New find folded in: **Nosara Tico Surf School** (confirmed locally owned — "100% Tico" instructors, ISA & RLSS certified) added to [costa-rica-surf-hostels](./external-sources/costa-rica-surf-hostels.md) + [research page](./research/costa-rica-surf-hostels.md) confirmed-local schools table.
 - Added green-season caveat: Nosara has poor roads + frequent bridge washouts in the rainy season (August transfer buffer; Sámara/Tamarindo easier to reach).
 - Open follow-ups: if the user shares Reddit thread URLs/text, ingest them directly; otherwise rely on guide + operator sources.
-
-## 2026-06-03: Test file
-
-- Created scratch [test.md](./test.md) at the project root to try out the OK editor in web view; opened the preview to it. No real trip content — safe to delete.
-- Added a second scratch [test-2.md](./test-2.md) (links back to test.md); navigated the preview to it. Also safe to delete.
 
