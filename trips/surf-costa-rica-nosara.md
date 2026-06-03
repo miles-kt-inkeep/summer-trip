@@ -8,7 +8,7 @@ tags: [article, proposal, surfing]
 
 ## Overview
 
-**Surf week on Costa Rica's Nicoya coast (Nosara, with Santa Teresa as a punchier alt).** The warmest, cheapest, and closest international surf option from both NYC and SF — boardshorts water (~27 °C) and famously consistent Pacific waves. The honest caveat: **August is green-season with bigger south swells that favor intermediates**, so this is the more *ambitious* surf pick. It works well for an improving group that wants to be pushed, especially based in **Nosara/Playa Guiones**, which is versatile enough that "there's usually a smaller peak working somewhere." Evidence: [surf options research](../research/surf-trip-options.md).
+**Surf week on Costa Rica's Nicoya coast (Nosara, with Santa Teresa as a punchier alt).** The warmest, cheapest, and closest international surf option from both NYC and SF — boardshorts water (~27 °C) and famously consistent Pacific waves. The honest caveat: **August is green-season with bigger south swells that favor intermediates**, so this is the more *ambitious* surf pick. It works well for an improving group that wants to be pushed, especially based in **Nosara/Playa Guiones**, which is versatile enough that "there's usually a smaller peak working somewhere." Evidence: [surf options research](../research/surf-trip-options.md). **August conditions:** peak season — the **most consistent** of all options, glassy offshore mornings, water 29–30 °C (no wetsuit); Nosara/Tamarindo forgiving, Santa Teresa punchier (sets to 5 ft) — see [August surf conditions](../research/surf-conditions-august.md).
 
 ## Itinerary
 
