@@ -88,4 +88,5 @@ What to log:
 ## 2026-06-03: Test file
 
 - Created scratch [test.md](./test.md) at the project root to try out the OK editor in web view; opened the preview to it. No real trip content — safe to delete.
+- Added a second scratch [test-2.md](./test-2.md) (links back to test.md); navigated the preview to it. Also safe to delete.
 
