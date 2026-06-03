@@ -50,6 +50,28 @@ flowchart TD
 > [!TIP]
 > **Universal rule for all five spots: surf in the morning.** Portugal's Nortada and Costa Rica's afternoon onshore both clean up at dawn. Plan dawn-patrol sessions and lazy/explore afternoons.
 
+## Costa Rica — which break, by level (August)
+
+"Costa Rica" is really a dozen breaks with very different difficulty. In August (green-season S/SW swell), the Pacific beach breaks are consistent; reefs/points like Playa Negra are weaker (they peak Nov–Apr). For an advancing-beginner group, base near a **sandy beach break** and treat the reefs as look-don't-touch.
+
+| Break | Area | Type | August difficulty | For your group |
+| --- | --- | --- | --- | --- |
+| **Playa Sámara** | Sámara | Reef-protected bay | Waist–chest at high tide | 🟢 **Gentlest** — best pure-beginner base |
+| **Playa Guiones** | Nosara | Sandy beach break | All levels, consistent | 🟢 **Best learn-and-improve** spot |
+| **Playa Carmen** | Santa Teresa | Beach break | Less powerful, mind rips | 🟢 Beginner-suited |
+| **Playa Tamarindo** | Tamarindo | River-mouth sand | Gradual takeoffs | 🟢 Most beginner-friendly in its area |
+| **Playa Hermosa (ST)** | Santa Teresa | Beach break | Mellow small days; huge on big swell | 🟡 Beginner *small days only* |
+| **Playa Santa Teresa (main)** | Santa Teresa | Punchy beach break | Upper-beginner/intermediate | 🟡 Step-up |
+| **Playa Avellanas** | Guanacaste | Multi-peak beach | Beginner calm days → advanced big days | 🟡 Versatile; pick your peak |
+| **Playa Grande** | Tamarindo | Beach break | Main peak fast/hollow; mellower down the beach | 🟡 Intermediate (avoid main peak) |
+| **Playa Pelada** | Nosara | Reef | Intermediate | 🟠 Reef — once you progress |
+| **Mal País** | S. of Santa Teresa | Reef | Heavy | 🔴 Intermediate/advanced |
+| **Playa Carrillo** | S. of Sámara | Point | Head-high south end | 🔴 Intermediate/advanced |
+| **Playa Negra** | Guanacaste | Shallow rock reef/point | Fast; best Nov–Apr | 🔴 Advanced |
+
+> [!TIP]
+> **Base → home break:** **Sámara** (Playa Sámara, gentlest) · **Nosara** (Playa Guiones, versatile, but mind [rainy-season road/bridge access](./costa-rica-surf-hostels.md)) · **Santa Teresa** (Playa Carmen to learn, main beach to step up) · **Tamarindo** (Playa Tamarindo to learn, Avellanas/Playa Grande to progress). All four put a beginner-friendly sandy break and a step-up option within reach.
+
 ## Bottom line vs. the trip picks
 
 - Choosing for **surf quality + reliability** → **Costa Rica** (Tamarindo/Nosara to stay forgiving; Santa Teresa to push). See [Costa Rica proposal](../trips/surf-costa-rica-nosara.md).
