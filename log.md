@@ -85,3 +85,10 @@ What to log:
 - Added green-season caveat: Nosara has poor roads + frequent bridge washouts in the rainy season (August transfer buffer; Sámara/Tamarindo easier to reach).
 - Open follow-ups: if the user shares Reddit thread URLs/text, ingest them directly; otherwise rely on guide + operator sources.
 
+## 2026-06-02: Costa Rica break-by-break detail
+
+- Updated [surf-conditions-august](./research/surf-conditions-august.md) with a specific Costa Rica break-by-break table (Sámara, Guiones, Playa Carmen, Tamarindo, Hermosa, ST main, Avellanas, Playa Grande, Pelada, Mal País, Carrillo, Playa Negra) with August difficulty + level fit, plus a base→home-break tip.
+- Grounded the breaks in [surf-conditions-august](./external-sources/surf-conditions-august.md) (added break-by-break section + Surf Atlas / Stormrider / Witch's Rock / Costa Rica Waves sources).
+- Key point: in August, sandy beach breaks (Sámara/Guiones/Carmen/Tamarindo) are the consistent, beginner-safe picks; reefs/points (Mal País, Negra, Carrillo) are intermediate/advanced and Negra is better Nov–Apr.
+- Open follow-ups: pick a base (Sámara gentlest / Nosara versatile but green-season access / Santa Teresa or Tamarindo for learn+step-up).
+
