@@ -30,6 +30,21 @@ August surf-condition data per spot, aggregated from Surf Atlas, surf-forecast.c
 - **Waves:** Aug = "mini-summer," consistent SW swells + offshore, manageable crowds. Beach break typically **3–5 ft**, mellow at high tide with **long whitewater rides**; also small 30–60 cm sections. "One of the best learn-to-surf breaks in Costa Rica" — more sheltered/forgiving than Santa Teresa.
 - **Water temp:** **25–30 °C (77–86 °F)** — warm, no wetsuit.
 
+### Costa Rica — break-by-break (Nicoya / Guanacaste)
+Grounded from Surf Atlas, Stormrider, Witch's Rock, Costa Rica Waves, nicoyapeninsula.com (fetched 2026-06-02). Difficulty is for **August** (green-season S/SW swell):
+- **Playa Guiones (Nosara)** — sandy beach break, consistent, **all levels**; the region's classic learn-and-improve spot.
+- **Playa Pelada (Nosara)** — left & right **reef** breaks, **intermediate**.
+- **Playa Carmen (Santa Teresa, central)** — beach break, **less powerful** than other Pacific spots → **beginner-suited** (mind rips).
+- **Playa Santa Teresa (main)** — punchy beach break, **upper-beginner/intermediate**.
+- **Playa Hermosa (just N of Santa Teresa)** — mellows for **beginners/loggers** on small–medium swell; can reach **13 ft** on big swell (then experts only).
+- **Mal País (south)** — **reef** breaks, can be heavy → **intermediate/advanced**.
+- **Playa Tamarindo (main / river mouth)** — sandy bottom, gradual takeoffs → **most beginner-friendly** in that area.
+- **Playa Grande (next to Tamarindo)** — more powerful/consistent, less crowded; **main peak fast & hollow = advanced**, but **intermediate** fun waves a few hundred m down the beach.
+- **Playa Avellanas ("Little Hawaii," ~25 min S of Tamarindo)** — multiple peaks; **beginner on calm days**, **intermediate** playful peaks, advanced on big days — most versatile.
+- **Playa Negra** — fast right **reef/point**, shallow rock → **advanced** (and best Nov–Apr, weaker in August).
+- **Playa Sámara** — **reef-protected calm bay**, waist-to-chest at high tide → **gentlest/most beginner-friendly**, uncrowded.
+- **Playa Carrillo (just S of Sámara)** — head-high at the south end on high tide → **intermediate/advanced**.
+
 ## Highlights
 
 > Ericeira August: "waist-high on a good day... ideal for beginners," water 20–22 °C but Nortada can crash it to 15 °C; surf mornings before the onshore wind.
@@ -42,4 +57,4 @@ August surf-condition data per spot, aggregated from Surf Atlas, surf-forecast.c
 
 The decisive contrasts for an advancing-beginner group: **consistency** (Costa Rica peak/reliable; Spain riskiest for flat days), **forgiveness** (Ericeira Foz + Tamarindo gentlest; Santa Teresa punchiest), and **water** (CR boardshorts; Portugal coldest with Nortada risk). All three regions reward **morning** sessions. Analysis in research/.
 
-Source links: [Surf Atlas Ericeira](https://thesurfatlas.com/surfing-portugal/ericeira-surf/), [surf-forecast Zarautz sea temp](https://www.surf-forecast.com/breaks/Zarautz/seatemp), [Surfline Nosara](https://www.surfline.com/surf-report/nosara/584204204e65fad6a7709328), [Witch's Rock Tamarindo](https://witchsrocksurfcamp.com/when-is-the-best-time-to-surf-tamarindo/), [Dreamsea seasons](https://dreamseacostarica.com/costa-rica-surf-seasons-explained-when-to-catch-the-perfect-wave/).
+Source links: [Surf Atlas Ericeira](https://thesurfatlas.com/surfing-portugal/ericeira-surf/), [surf-forecast Zarautz sea temp](https://www.surf-forecast.com/breaks/Zarautz/seatemp), [Surfline Nosara](https://www.surfline.com/surf-report/nosara/584204204e65fad6a7709328), [Witch's Rock Tamarindo](https://witchsrocksurfcamp.com/when-is-the-best-time-to-surf-tamarindo/), [Dreamsea seasons](https://dreamseacostarica.com/costa-rica-surf-seasons-explained-when-to-catch-the-perfect-wave/). Break detail: [Surf Atlas Santa Teresa](https://thesurfatlas.com/costa-rica-surf/surfing-santa-teresa/), [Stormrider Golfo de Nicoya](https://www.stormrider.surf/region/golfo-de-nicoya), [Witch's Rock Playa Grande](https://witchsrocksurfcamp.com/playa-grande-surf-spot/), [Costa Rica Waves Sámara](https://www.costaricawaves.com/playa-samara/).
