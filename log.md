@@ -70,3 +70,11 @@ What to log:
 - Note: edit\_document returned a spurious frontmatter-intersect error on one parallel edit; succeeded on retry.
 - Open follow-ups: check live forecasts \~10 days out once dates lock; confirm flat-day backup spots (Ericeira breaks; Mundaka/Sopelana from San Sebastián).
 
+## 2026-06-02: Costa Rica locally-owned surf hostels
+
+- Researched budget, locally/Tico-owned surf hostels + schools in Costa Rica with lesson + rental options (Santa Teresa, Nosara, Sámara, Tamarindo, Montezuma).
+- Captured external source [costa-rica-surf-hostels](./external-sources/costa-rica-surf-hostels.md) and wrote research page [costa-rica-surf-hostels](./research/costa-rica-surf-hostels.md) with hostel + confirmed-Tico-school tables and an ownership-confidence column.
+- Key finding: hostel ownership is hard to verify online (Selina = chain); the reliably-local route is a small independent hostel + a confirmed Tico-owned school (Tico's/Sámara, Avellanas/Mauricio, Young Visions/Montezuma). Sámara = gentlest base; Zeneida's (Santa Teresa) = ~$13 beachfront budget.
+- Cross-linked from [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md) and [surf-camp-comparison](./research/surf-camp-comparison.md).
+- Open follow-ups: confirm ownership + August availability + rental day-rates directly when booking; choose base (Sámara/Santa Teresa/Tamarindo).
+
