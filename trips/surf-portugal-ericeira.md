@@ -8,7 +8,7 @@ tags: [article, proposal, surfing]
 
 ## Overview
 
-**Surf week in Ericeira, Portugal, finishing in Lisbon.** Ericeira is Europe's only World Surfing Reserve and a dedicated surf town 40 minutes from Lisbon. August brings smaller, manageable, consistent waves — the gentlest "classroom" of the realistic options — backed by dense surf-camp coaching infrastructure. This is the **top surf pick** for an advancing-beginner group: you get real coaching (2 sessions/day), level-appropriate waves, and a world-class city finish with almost no extra travel. Evidence: [surf options research](../research/surf-trip-options.md).
+**Surf week in Ericeira, Portugal, finishing in Lisbon.** Ericeira is Europe's only World Surfing Reserve and a dedicated surf town 40 minutes from Lisbon. August brings smaller, manageable, consistent waves — the gentlest "classroom" of the realistic options — backed by dense surf-camp coaching infrastructure. This is the **top surf pick** for an advancing-beginner group: you get real coaching (2 sessions/day), level-appropriate waves, and a world-class city finish with almost no extra travel. Evidence: [surf options research](../research/surf-trip-options.md). **August conditions:** small, forgiving whitewater at Foz do Lizandro; **surf mornings** before the Nortada onshore wind; water 20–22 °C, wetsuit (can drop to 15 °C on a hard Nortada) — see [August surf conditions](../research/surf-conditions-august.md).
 
 ## Itinerary
 
