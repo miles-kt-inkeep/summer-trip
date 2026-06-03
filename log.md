@@ -78,3 +78,10 @@ What to log:
 - Cross-linked from [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md) and [surf-camp-comparison](./research/surf-camp-comparison.md).
 - Open follow-ups: confirm ownership + August availability + rental day-rates directly when booking; choose base (Sámara/Santa Teresa/Tamarindo).
 
+## 2026-06-02: Reddit check (Costa Rica) + additions
+
+- Attempted to pull Reddit community opinion on Costa Rica surf towns/schools. **Reddit is not directly accessible** — `reddit.com`/`old.reddit.com` are blocked for fetch, and the WebSearch domain filter rejects reddit.com. Noted as a tooling limitation; substituted open-web + operator-direct sources.
+- New find folded in: **Nosara Tico Surf School** (confirmed locally owned — "100% Tico" instructors, ISA & RLSS certified) added to [costa-rica-surf-hostels](./external-sources/costa-rica-surf-hostels.md) + [research page](./research/costa-rica-surf-hostels.md) confirmed-local schools table.
+- Added green-season caveat: Nosara has poor roads + frequent bridge washouts in the rainy season (August transfer buffer; Sámara/Tamarindo easier to reach).
+- Open follow-ups: if the user shares Reddit thread URLs/text, ingest them directly; otherwise rely on guide + operator sources.
+
