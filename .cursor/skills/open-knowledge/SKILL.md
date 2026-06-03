@@ -3,7 +3,7 @@ name: open-knowledge
 description: "MUST invoke before reading or editing any `.md` / `.mdx` file, and before any `mcp__open-knowledge__*` tool call (`exec`, `search`, `write_document`, `edit_document`, and the rest). This skill is installed into the repository by `ok init`, so its presence alone means this is an Open Knowledge project — its runtime contract governs every markdown file here, with no need to probe for a `.ok/` directory. Authoritative agent-runtime contract; supersedes the overlapping MCP server `instructions` echo."
 compatibility: "Claude Code, Claude Desktop, Claude Cowork, Claude.ai web. Requires Open Knowledge MCP server + code execution."
 metadata:
-  version: "0.9.0"
+  version: "0.9.1"
   author: "Inkeep"
   repository: "https://github.com/inkeep/open-knowledge"
 ---
@@ -18,7 +18,7 @@ Open Knowledge (OK) is a markdown-CRDT collaboration platform exposed via MCP. T
 ## TL;DR — the 90% case
 
 1. **Reads:** `exec("cat …")` for a single doc, `exec("ls -A …")` for a directory (with folder defaults + template menu), `exec("grep …")` for literal, `search` for ranked retrieval. Native `Read` / `Grep` only on source code (`.ts` / `.py` / …), never on in-scope `.md` / `.mdx`.
-2. **Writes:** `write_document` for new or full-replace, `edit_document` for body-only find/replace, `edit_frontmatter` for 1-2 frontmatter keys (JSON Merge Patch — preferred). Full frontmatter rewrites use `write_document({ position: "replace" })`. `edit_document` rejects frontmatter (HTTP 400).
+2. **Writes:** `write_document` for new or full-replace, `edit_document` for body-only find/replace, `edit_frontmatter` for 1-2 frontmatter keys (JSON Merge Patch — preferred). Full frontmatter rewrites use `write_document({ position: "replace" })`. `edit_document` rejects frontmatter (HTTP 400). Pass a one-line `summary` (≤80 chars, user-facing outcome) on every content write — it's the timeline change-note (see §Writing).
 3. **Preview:** every OK read/write response carries a route-only `previewUrl` (`/#/<doc>`, no host:port). If you have a `preview_*` tool, call `preview_start("open-knowledge-ui")`; if you have an in-app browser, call `get_preview_url` once for the full browser URL and navigate to it; on the Claude Code CLI (no browser tool), run `ok open <doc>` to open it in the OK Desktop app. Surface to the user on a `start-ui` warning (no UI running). Don't `preview_screenshot` to confirm edits — the CRDT tool response is the confirmation.
 4. **Workflow tools** (`ingest` / `research` / `consolidate` / `discover`) return procedural guides, not data. Use them when the work fits the layer; follow their numbered steps.
 
@@ -99,6 +99,10 @@ OK Electron and `ok ui` share `ui.lock`; when a second UI binds a different port
 ## Writing
 
 Call `write_document` / `edit_document` as soon as you have content. Native `Edit` / `sed` / direct `Write` on in-scope markdown is forbidden — it bypasses the CRDT and loses agent attribution in the shadow repo.
+
+**Pass a `summary` on every content write (SHOULD).** `write_document`, `edit_document`, and `edit_frontmatter` each take a one-line `summary` (≤80 chars) describing the user-facing outcome of the change — "Add gear list and permit info", not "edited trip doc". It renders as a bullet under your name in the document timeline and is the only human-readable change-note persisted to the shadow-repo history; omit it and the timeline shows *that* you wrote but not *what changed*. Write it from the reader's perspective, keep it specific, and avoid secrets or PII (it lands in git history). Each entry in the batch `docs:` form carries its own `summary`.
+
+**Content-divergence warning (Site A gate).** `write_document` and `edit_document` responses may include a content-divergence warning when the converged Y.Text doesn't match the bytes the payload composed to (concurrent peer left residue, or — rare — a primitive regression). The write still landed; on this signal, re-read the doc (`exec("cat <path>")`) to see what actually converged before continuing. Single-doc shape: `structuredContent.contentDivergence = { kind: "content-divergence", intendedBytes, actualBytes, byteDelta, hint }`. Batch shape: per-doc `structuredContent.documents[].contentDivergence` with the same fields. Distinct from the preview-attach `warning` field (`action: "attach-preview-once" | "start-ui"`) — separate keys, can coexist.
 
 To author an MDX doc (the KB renders MDX/JSX components), pass a `.mdx` `docName` on the create: `write_document({ docName: "guides/widget.mdx", markdown, position: "replace" })` lands `guides/widget.mdx`. A `.md` or extension-less `docName` lands `.md`. An existing doc keeps its on-disk extension regardless of the suffix you pass — changing it in place isn't available via the MCP today.
 
