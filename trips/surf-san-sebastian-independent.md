@@ -7,7 +7,7 @@ tags: [article, proposal, surfing]
 ---
 ## Overview
 
-**Independent surf-and-city week in San Sebastián, Spain — no camp, just a board rental and a lesson or two.** This is the best fit for the "we can already surf, we don't need a camp" brief: base in one of the world's great food cities (pintxos, La Concha bay), surf the beginner-friendly **Zarautz** beach (2.5 km of sand, 15–20 min away by bus) on your own each morning, and book **1–2 private coaching sessions** to level up. The surf base *is* the city, so there's no separate "city finish" to arrange. Evidence: [independent surf research](../research/surf-independent-and-city-surf.md).
+**Independent surf-and-city week in San Sebastián, Spain — no camp, just a board rental and a lesson or two.** This is the best fit for the "we can already surf, we don't need a camp" brief: base in one of the world's great food cities (pintxos, La Concha bay), surf the beginner-friendly **Zarautz** beach (2.5 km of sand, 15–20 min away by bus) on your own each morning, and book **1–2 private coaching sessions** to level up — or use a flexible surf-house like **Good People Surf (Zarautz)**, whose optional video-coaching + forecast-training add-on suits improvers (see the [surf camp comparison](../research/surf-camp-comparison.md)). The surf base *is* the city, so there's no separate "city finish" to arrange. Evidence: [independent surf research](../research/surf-independent-and-city-surf.md).
 
 ## Itinerary
 

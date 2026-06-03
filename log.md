@@ -53,3 +53,11 @@ What to log:
 - Added "Getting there (mid-Aug example)" callouts to all six proposals: [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md), [hike-alta-via-1-dolomites](./trips/hike-alta-via-1-dolomites.md), [hike-tour-des-combins](./trips/hike-tour-des-combins.md), [hike-berliner-hoehenweg](./trips/hike-berliner-hoehenweg.md); linked flight examples from [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md).
 - Key finding: from NYC nearly every gateway is a nonstop; from SF take one well-chosen connection (Newark→Lisbon, Madrid→Bilbao, Zurich→Geneva). SF→Munich and SF→Liberia are nonstop.
 - Open follow-ups: pull live fares for the locked week; verify SFO→LIR and summer SWISS JFK→GVA frequency; decide whether SF folks connect via Newark to share the NYC transatlantic leg.
+
+## 2026-06-02: Surf camp comparison (Portugal / Spain / Costa Rica)
+
+- Researched and compared specific named surf camps across the three regions; captured the bundle-vs-à-la-carte distinction.
+- Captured external source [surf-camp-options](./external-sources/surf-camp-options.md) (per-camp offerings + pricing: Lapoint, Rapture, Ericeira Surf Camp, Good People, Stoke, Zarautz Surf House, Dreamsea, Lapoint CR, Safari Surf).
+- Wrote new comparison page [surf-camp-comparison](./research/surf-camp-comparison.md) with per-country tables, a value chart, and a group-tuned recommendation (Good People Zarautz à-la-carte for improvers; Dreamsea best-value bundle; Lapoint most polished).
+- Cross-linked it from [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md), and [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md).
+- Open follow-ups: confirm Good People August dates + lesson-pack price; bundle vs à-la-carte group decision; dorm vs private room; CR base (Tamarindo/Santa Teresa/Nosara).
