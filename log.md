@@ -2,8 +2,7 @@
 title: Work Log
 description: Append-only audit trail. After each turn that creates, edits, or restructures content in the knowledge base, append one dated entry here (one per turn, not per file). Silent edits break the audit trail.
 ---
-
-#  Work Logs
+# Work Logs
 
 Append-only audit trail. **Append a dated entry after any turn that creates, edits, or restructures content in the knowledge base.** One entry per turn, not per file. Silent edits break the chain that makes knowledge-base changes auditable.
 
@@ -27,11 +26,11 @@ What to log:
 - Sources ingested: [source-slug](./external-sources/source-slug.md)
 - Open follow-ups: <topic-1>, <topic-2>
 
--->
+\-->
 
 ## 2026-06-02: August trip research — surf vs. multi-day hike
 
-- Researched and proposed options for a ~1-week August trip (group of 2–4, NYC + SF, mid budget, advancing-beginner surfers / experienced hikers, optional city finish).
+- Researched and proposed options for a \~1-week August trip (group of 2–4, NYC + SF, mid budget, advancing-beginner surfers / experienced hikers, optional city finish).
 - Captured 7 external sources: [hike-tour-des-combins](./external-sources/hike-tour-des-combins.md), [hike-berliner-hoehenweg](./external-sources/hike-berliner-hoehenweg.md), [hike-alta-via-1-dolomites](./external-sources/hike-alta-via-1-dolomites.md), [surf-where-to-surf-august](./external-sources/surf-where-to-surf-august.md), [surf-costa-rica-seasons](./external-sources/surf-costa-rica-seasons.md), [surf-ericeira-camps](./external-sources/surf-ericeira-camps.md), [logistics-flights-august](./external-sources/logistics-flights-august.md).
 - Wrote 2 research syntheses: [surf-trip-options](./research/surf-trip-options.md), [alpine-hike-options](./research/alpine-hike-options.md).
 - Wrote 6 trip proposals: [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md), [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md), [hike-alta-via-1-dolomites](./trips/hike-alta-via-1-dolomites.md), [hike-tour-des-combins](./trips/hike-tour-des-combins.md), [hike-berliner-hoehenweg](./trips/hike-berliner-hoehenweg.md).
@@ -68,5 +67,6 @@ What to log:
 - Captured external source [surf-conditions-august](./external-sources/surf-conditions-august.md) and wrote research page [surf-conditions-august](./research/surf-conditions-august.md) with a side-by-side table, decision flowchart, and morning-surf rule.
 - Key finding: Costa Rica is peak season / most consistent (29–30 °C, glassy AM offshore; Santa Teresa punchiest); Ericeira gentlest but smaller + colder (Nortada, wetsuit, AM only); San Sebastián riskiest for flat days (summer = flat season).
 - Threaded "August conditions" notes into [surf-portugal-ericeira](./trips/surf-portugal-ericeira.md), [surf-san-sebastian-independent](./trips/surf-san-sebastian-independent.md), [surf-costa-rica-nosara](./trips/surf-costa-rica-nosara.md); linked from [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md) and [surf-camp-comparison](./research/surf-camp-comparison.md).
-- Note: edit_document returned a spurious frontmatter-intersect error on one parallel edit; succeeded on retry.
-- Open follow-ups: check live forecasts ~10 days out once dates lock; confirm flat-day backup spots (Ericeira breaks; Mundaka/Sopelana from San Sebastián).
+- Note: edit\_document returned a spurious frontmatter-intersect error on one parallel edit; succeeded on retry.
+- Open follow-ups: check live forecasts \~10 days out once dates lock; confirm flat-day backup spots (Ericeira breaks; Mundaka/Sopelana from San Sebastián).
+
