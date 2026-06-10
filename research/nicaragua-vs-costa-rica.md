@@ -86,6 +86,7 @@ Both countries split into **all-inclusive bundles** vs **hostel + à-la-carte le
 > [!TIP]
 > - **Default → Costa Rica.** For a mixed group on a one-week trip, the nonstop flights, short transfer, and Level 2 stability outweigh Nicaragua's wind advantage. See the [Costa Rica proposal](../trips/surf-costa-rica-nosara.md).
 > - **Choose Nicaragua if** the group is **surf-first**, budget-conscious, and comfortable with a **Level 3 advisory** + a connecting flight: you get cleaner all-day waves and fewer crowds. See the [Nicaragua proposal](../trips/surf-nicaragua.md). Base in **San Juan del Sur (Maderas)** for the gentlest, most social option.
+> - **Want this warm/cheap Central American surf *without* the Level 3 advisory?** **El Salvador is now Level 1** — the direct safe upgrade. See [safe surf alternatives](./safe-surf-alternatives.md).
 
 ## Open questions
 
