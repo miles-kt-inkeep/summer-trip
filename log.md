@@ -92,3 +92,12 @@ What to log:
 - Key point: in August, sandy beach breaks (Sámara/Guiones/Carmen/Tamarindo) are the consistent, beginner-safe picks; reefs/points (Mal País, Negra, Carrillo) are intermediate/advanced and Negra is better Nov–Apr.
 - Open follow-ups: pick a base (Sámara gentlest / Nosara versatile but green-season access / Santa Teresa or Tamarindo for learn+step-up).
 
+## 2026-06-02: Nicaragua as a surf option (+ vs Costa Rica)
+
+- Researched Nicaragua surf: conditions, camps, logistics, safety; built a Costa Rica comparison.
+- Captured external sources [nicaragua-surf](./external-sources/nicaragua-surf.md) (conditions/spots/logistics/safety) and [nicaragua-surf-camps](./external-sources/nicaragua-surf-camps.md).
+- Wrote comparison [nicaragua-vs-costa-rica](./research/nicaragua-vs-costa-rica.md) and proposal [surf-nicaragua](./trips/surf-nicaragua.md); added Nicaragua row + recommendation to [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md) and a pointer from [surf-conditions-august](./research/surf-conditions-august.md).
+- Key finding: Nicaragua wins the *wave* (offshore 300+ days/yr → clean all-day surf, peak Aug swell, fewer crowds, cheaper) but loses the *trip* (US State Dept **Level 3 "Reconsider Travel"**, no nonstop — connect via MIA/IAH/PTY to Managua + 2.5–3 h transfer). Bases: Playa Maderas (SJDS, social/beginner) or Guasacate/Popoyo (quieter, better waves).
+- Note: OK MCP server reconnected mid-session with renamed tools (write/edit/preview_url); link-index lag briefly flagged the new docs as dead (false positive; confirmed on disk with backlinks).
+- Open follow-ups: group's comfort with the Level 3 advisory is the deciding factor; SJDS vs Popoyo; live MGA airfare once dates lock.
+
