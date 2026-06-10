@@ -101,3 +101,13 @@ What to log:
 - Note: OK MCP server reconnected mid-session with renamed tools (write/edit/preview_url); link-index lag briefly flagged the new docs as dead (false positive; confirmed on disk with backlinks).
 - Open follow-ups: group's comfort with the Level 3 advisory is the deciding factor; SJDS vs Popoyo; live MGA airfare once dates lock.
 
+## 2026-06-02: Safe surf alternatives (no/low advisory)
+
+- Researched warm, beginner-friendly August surf options WITHOUT Nicaragua's Level 3 advisory; verified current US State Dept levels.
+- Advisory levels: El Salvador **Level 1** (upgraded), Mexico Nayarit/Baja Sur **Level 2**, Hawaii **none** (domestic), Costa Rica Level 2, Nicaragua Level 3.
+- Captured [safe-surf-alternatives](./external-sources/safe-surf-alternatives.md); wrote research [safe-surf-alternatives](./research/safe-surf-alternatives.md) (advisory-ranked table) and proposal [surf-el-salvador](./trips/surf-el-salvador.md).
+- El Salvador is the standout safe answer: Level 1, warm/cheap, peak Aug swell, **45-min** airport transfer, El Sunzal = "most forgiving learning wave in Central America" (point-break coast — beginners stay inside on big days).
+- Wired into [00-overview-surf-vs-hike](./trips/00-overview-surf-vs-hike.md) (El Salvador row + safe-alternatives note) and linked from [nicaragua-vs-costa-rica](./research/nicaragua-vs-costa-rica.md).
+- Note: new-doc link-index lag again flagged false-positive dead links; confirmed all docs on disk.
+- Open follow-ups: does group require Level 1/none only (→ El Salvador/Hawaii) or accept Level 2; full proposals for Hawaii/Mexico if wanted; re-check advisories before booking.
+
