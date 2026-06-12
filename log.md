@@ -113,7 +113,7 @@ What to log:
 
 ## 2026-06-02: Don Jon's vs Lost Boyz (Santa Teresa)
 
-- Compared two Santa Teresa surf stays at user's request. Captured [cr-don-jons-lost-boyz](./external-sources/cr-don-jons-lost-boyz.md); added a head-to-head section + tip to [costa-rica-surf-hostels](./research/costa-rica-surf-hostels.md).
+- Compared two Santa Teresa surf stays at user's request. Captured [cr-don-jons-lost-boyz](./external-sources/compare-don-jons-lost-boyz.md); added a head-to-head section + tip to [costa-rica-surf-hostels](./research/costa-rica-surf-hostels.md).
 - Don Jon's = chill yoga lodge, private/comfort rooms (~$60–90/nt), bundled 5+ day camp (daily lesson+board+breakfast), private 1:1 ~$60 — couples/families/calm. Lost Boyz = social/party hostel, dorms from ~$22/nt, à-la-carte surf packs ($250–650/wk, 2–5 lessons + 7-day board) + adventure add-ons — young/social/budget.
 - Both Santa Teresa (punchier beach break → coached mornings); neither confirmed Tico-owned.
 - Open follow-ups: confirm August room availability + exact nightly rates; bundle (Don Jon's) vs flexible packs (Lost Boyz) for the group.
