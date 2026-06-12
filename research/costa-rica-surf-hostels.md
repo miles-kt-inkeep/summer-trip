@@ -56,7 +56,7 @@ This combo (independent hostel + Tico school) typically runs **~$13–25/night l
 
 ## Santa Teresa head-to-head: Don Jon's vs Lost Boyz
 
-Two popular Santa Teresa surf stays — both steps from the beach, both all-levels — but aimed at different travelers ([src](../external-sources/compare-don-jons-lost-boyz.md)).
+Two popular Santa Teresa surf stays — both steps from the beach, both all-levels — but aimed at different travelers ([src](../external-sources/cr-don-jons-lost-boyz.md)).
 
 | | **Don Jon's Surf & Yoga Lodge** | **Lost Boyz Hostel & Surf Camp** |
 | --- | --- | --- |
