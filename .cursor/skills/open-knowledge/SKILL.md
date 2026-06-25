@@ -1,9 +1,9 @@
 ---
 name: open-knowledge
-description: "MUST invoke before reading or editing any `.md` / `.mdx` file, and before any `mcp__open-knowledge__*` tool call (`exec`, `search`, `write`, `edit`, and the rest). This skill is installed into the repository by `ok init`, so its presence alone means this is an Open Knowledge project — its runtime contract governs every markdown file here, with no need to probe for a `.ok/` directory. Authoritative agent-runtime contract; supersedes the overlapping MCP server `instructions` echo."
+description: "MUST invoke before reading or editing any `.md` / `.mdx` file, and before any `mcp__open-knowledge__*` tool call (`exec`, `search`, `write`, `edit`, and the rest). This skill is installed into the repository by `ok init`, so its presence alone means this is an Open Knowledge project — its runtime contract governs every markdown file here, with no need to probe for a `.ok/` directory. Authoritative agent-runtime contract for working inside this Open Knowledge project."
 compatibility: "Claude Code, Claude Desktop, Claude Cowork, Claude.ai web. Requires Open Knowledge MCP server + code execution."
 metadata:
-  version: "0.10.0"
+  version: "0.18.0"
   author: "Inkeep"
   repository: "https://github.com/inkeep/open-knowledge"
 ---
@@ -11,7 +11,7 @@ metadata:
 
 Open Knowledge (OK) is a markdown-CRDT collaboration platform exposed via MCP. This skill carries the behavioral rules agents need to use it fluently. Every section is a MUST unless marked otherwise.
 
-> **Authoritative source.** Where the MCP server's `instructions` echo overlaps with this skill, this skill wins — the full attach rule, grounding rule, media rules, dead-link verification, and failure-mode guidance live only here.
+> **Authoritative source.** This skill is the single source of Open Knowledge agent guidance — the full attach rule, grounding rule, media rules, dead-link verification, and failure-mode guidance live only here.
 
 > Skill version: tracks `@inkeep/open-knowledge-server` package version. Check `cat ~/.ok/skill-state.yml` to see what's installed locally. **Version floor:** `ok seed` (referenced below) requires `@inkeep/open-knowledge` >= 0.4.0. If `ok seed` errors with `unknown command`, upgrade: `npm install -g @inkeep/open-knowledge`.
 
@@ -21,6 +21,7 @@ Open Knowledge (OK) is a markdown-CRDT collaboration platform exposed via MCP. T
 2. **Writes:** `write({ document: { path, content } })` for a new or full-replace doc; `edit({ document: { path, find, replace } })` for a body find/replace; `edit({ document: { path, frontmatter } })` for a frontmatter merge-patch (`null` deletes a key). `delete({ document })` removes, `move({ from, to })` moves/renames. Body find/replace is body-only — frontmatter goes through the `frontmatter` patch. Pass a one-line `summary` (≤80 chars, user-facing outcome) on every content write — it's the timeline change-note (see §Writing).
 3. **Preview:** every OK read/write response carries a route-only `previewUrl` (`/#/<doc>`, no host:port). If you have a `preview_*` tool, call `preview_start("open-knowledge-ui")`; if you have an in-app browser, call `preview_url` once for the full browser URL and navigate to it; on the Claude Code CLI (no browser tool), run `ok open <doc>` to open it in the OK Desktop app. Surface to the user on a `start-ui` warning (no UI running). Don't `preview_screenshot` to confirm edits — the CRDT tool response is the confirmation.
 4. **Workflow guides** — `workflow({ kind: 'ingest' | 'research' | 'consolidate' | 'discover' })` returns a procedural guide, not data. Use it when the work fits the layer; follow the numbered steps.
+5. **Direct questions:** a plain business question ("which customers…", "can we use…", "what did we decide about…") routes to `search` / `exec` + a cited answer — no "research" or "report" keyword needed. Persist the answer as a page only when it is durable, spans multiple docs, and isn't already covered — *offer* first, never auto-create. See §Answering direct questions from the corpus.
 
 Everything below is depth. Read on demand.
 
@@ -67,6 +68,21 @@ Why: native tools skip frontmatter, backlinks, shadow-repo activity, and project
 - Literal search: `exec("grep -rn <term> <dir> | head -5")` — matches + enrichment on matched files.
 - Ranked search: `search({ query })` — cmd-K parity (title boost + body BM25 + recency); use when picking the best doc, not when listing every occurrence.
 
+## Answering direct questions from the corpus
+
+A direct question you can answer from existing documents — "which customers have non-standard indemnity?", "can we use Alloy's logo?", "what did we decide about X?" — does **not** need the words "research" or "report" to route here. Retrieve with `search` / `exec`, read the relevant docs, and **answer in chat with inline citations to the source docs you used**. That is the complete, correct default — most questions end here. This is NOT `workflow({ kind: 'research' })`: research gathers and synthesizes *external* sources behind a scoping gate; a corpus question just reads what the knowledge base already holds. (Inside an active `workflow({ kind: 'research' })` session, research's own "file valuable Q&A back" step governs how answers are persisted — not this section.)
+
+**Offer to persist the answer only when it is durable knowledge the KB is currently missing** — when ALL of these hold:
+
+- it **synthesizes across multiple docs** or surfaces a non-obvious fact a reader couldn't get from a single doc in one read — two docs that independently state the *same* fact are NOT synthesis; synthesis means combining information no single source holds in isolation;
+- it's **reusable** — likely to be asked again, or it records a decision / reference others will need;
+- **no existing doc already answers it** — scan first (`search`, `exec("grep …")`); if one does, point the user to it instead of writing a near-duplicate;
+- the answer is **sourced** per §Grounding, not speculation.
+
+When all hold, *offer* — don't write yet: "This pulls together [N docs] — want me to save it as `<slug>.md` under `<folder>` so it's findable next time?" On a yes, `write` it with frontmatter + inline citations to the source docs (§Grounding, §Linking). **Never auto-create the page.** A single-doc lookup, a navigational question, or anything you'd hesitate to call durable does NOT warrant an offer — answer in chat and stop; don't even prompt to save it. When in doubt, stay in chat: a missing page costs one re-query; a junk page pollutes the corpus permanently.
+
+**Headless / no user to ask** (autonomous run): still produce the answer — surface it with inline citations in the tool / run output as you would in chat, so the run log is the record. Default to NOT persisting unless the four criteria are unambiguously met; never persist on a maybe.
+
 ## Preview — open the browser at session start
 
 The user watches your edits land in a live browser preview. Open it once at session start, then keep working. Re-navigate only when the user asks to open a different doc, or to land them on a finished deliverable (see below) — not to re-check your own edits.
@@ -75,12 +91,16 @@ The user watches your edits land in a live browser preview. Open it once at sess
 
 **`previewUrl` is a route, not a URL to open.** Every read response (per-doc, on `exec` / `search` / `links` rows) and every write response carries a `previewUrl` — a route fragment like `/#/specs/foo/SPEC`, with **no scheme, host, or port**. It identifies *which doc* to preview, not a URL to hand a browser by itself. Never construct or guess preview URLs.
 
-**Pick how to open the preview by tool capability — not by host name.** Look at the tools actually available to you this session. If a tool can navigate to a URL, it counts as an in-app browser — match on the capability, not on what your host is called.
+**OK ships first-class preview support for three apps — Claude Code Desktop, Cursor, and the Codex desktop app — plus the Claude Code CLI on a separate track (below). Make the preview seamless in each.** Match on the tool you actually have (capability, not host name): if a tool can navigate to a URL, it counts as an in-app browser. The three apps map to:
 
-- **You have `preview_*` tools** (e.g. `preview_start` + `preview_eval`) → **First open of the session:** to land directly on a doc, arm it first with `preview_url({ armPaneTarget: true, document })` (or `folder`), then `preview_start("open-knowledge-ui")` — `ok ui` redirects the base-open straight to the armed route, so the pane opens on the doc, not root. Plain `preview_start` (no arm) opens at root. **Moving between docs once the pane is open: do it in one `preview_eval` step — set `window.location.hash` to the target's route fragment from the response `previewUrl`, the part from `#` on (e.g. `window.location.hash = '#/specs/foo/SPEC'`).** That drives the SPA router directly. Arm + `preview_start` only redirects a *fresh* open; it can't move an already-open pane (`preview_start` reuses the live process without reloading), so use `preview_eval` there. Don't read or edit `.claude/launch.json` — host-managed; the OK lock-collision proxy handles the UI-already-running case. If `preview_start` fails, report it; don't "fix" `launch.json`.
-- **No `preview_*` tool, but you have an in-app / built-in browser tool** — Codex's built-in browser, or any host tool that navigates to a URL (`browser`, `view_url`, `open_url`, `web.browse`, etc.) → call `preview_url` once for the **exact** target (`document` for a doc, `folder` for a folder) and navigate your **in-app browser** straight to the returned `url`. Open that deep URL directly — never the root then navigate. Omit both args only for the root.
-- **Truly no browser-capable tool — if you have ANY tool that navigates to a URL, use the in-app branch above** (a pure stdio host with no URL-navigation tool at all, e.g. the Claude Code CLI) → for an "open `<doc>`/`<folder>`" request, run **`ok open <doc>`** (`--folder` for a folder) — opens the doc in OK Desktop via deep link (folders in the browser), with browser fallback; an action, not a URL to print. No `ok` on PATH or no shell → `preview_url`, then `open <url>` in the system browser as a last resort, and say so plainly. The system browser is the fallback, never the default.
+- **Claude Code Desktop — you have `preview_*` tools** (e.g. `preview_start` + `preview_eval`) → **First open of the session:** to land directly on a doc, arm it first with `preview_url({ armPaneTarget: true, document })` (or `folder`), then `preview_start("open-knowledge-ui")` — `ok ui` redirects the base-open straight to the armed route, so the pane opens on the doc, not root. Plain `preview_start` (no arm) opens at root. **Moving between docs once the pane is open: do it in one `preview_eval` step — set `window.location.hash` to the target's route fragment from the response `previewUrl`, the part from `#` on (e.g. `window.location.hash = '#/specs/foo/SPEC'`).** That drives the SPA router directly. Arm + `preview_start` only redirects a *fresh* open; it can't move an already-open pane (`preview_start` reuses the live process without reloading), so use `preview_eval` there. Don't read or edit `.claude/launch.json` — host-managed; the OK lock-collision proxy handles the UI-already-running case. If `preview_start` fails, report it; don't "fix" `launch.json`.
+- **Cursor / Codex desktop — no `preview_*` tool, but you have an in-app / built-in browser tool** → call `preview_url` once for the **exact** target (`document` for a doc, `folder` for a folder) and navigate your **in-app browser** straight to the returned `url`. Open that deep URL directly — never the root then navigate; omit both args only for the root. Drive the tool your host gives you:
+  - **Cursor** → its built-in **Browser** tool, the **`Navigate`** action (`browser_navigate`, via Cursor's own `cursor-ide-browser`). Navigate it to the `url` yourself — don't print the URL or shell out to the system browser. (A *surfaced* link in Cursor follows its "Browser Tab" vs "Google Chrome" picker and may open the system browser; you calling `Navigate` avoids that. A third-party MCP like OK cannot push a URL into the pane — only the agent's own `Navigate` can.)
+  - **Codex desktop app** → its in-app **Browser** plugin (`@Browser`); drive it to the `url` (Codex navigates via `tab.goto`).
+  - **Any other host** with a URL-navigation tool (`browser`, `view_url`, `open_url`, `web.browse`, …) → navigate it to the `url`. **This is also the fallback when a named tool above isn't present under that exact name** (hosts rename tools): match on the capability, not the name. If no URL-navigation tool exists at all, drop to the Claude Code CLI track below.
 - **Honor `autoOpen`** (on `preview_url`, or on `warning` for write tools). If `false`, do not open or refresh any preview UI; surface the URL only if asked.
+
+**Claude Code CLI — a separate track (no browser).** The CLI is pure stdio: don't open or fake a browser. For an "open `<doc>`/`<folder>`" request, run **`ok open <doc>`** (`--folder` for a folder) — it deep-links the doc into OK Desktop (folders open in the browser); an action you run, not a URL to print. Any other pure-stdio host with **no** URL-navigation tool is on this track too — but if you *do* have a tool that navigates to a URL, use the in-app branch above, not this track. The Codex **CLI**, **IDE extension**, and **Cloud** also live here (web search only, no localhost browser). No `ok` on PATH or no shell → `preview_url`, then `open <url>` in the system browser as a last resort, and say so plainly. The system browser is the fallback, never the default.
 
 **Opening or reading a file IS a preview navigation.** On any "open `<file>`" / "read `<file>`" request, navigate the browser to that doc's `previewUrl` route from the tool response — not a separate fetch, not a fresh system-browser launch.
 
@@ -93,7 +113,9 @@ The user watches your edits land in a live browser preview. Open it once at sess
 
 Warnings fire at most once per session in the fresh-start case.
 
-**`previewUrl: null` only means "no UI reachable" on the two attach-warning tools: `write` / `edit`.** Workflow tools return prose and don't carry `previewUrl`. `delete` / `move` emit `previousPreviewUrl` (different field, for closing stale tabs) and don't fire attach warnings. `preview_url` reports `running: false` + `url: null` when no UI is running.
+**Re-point at the end of a multi-doc workflow; don't claim a doc is on screen unless you put it there.** The one-shot attach (signal 3) opens the preview *once* — later writes do NOT move the pane; it stays on the doc you last navigated to. When a turn touches several docs, finish by navigating the preview to the doc the user should land on, using your host's move mechanism (`preview_eval` setting `window.location.hash` from the response `previewUrl`, or `preview_url` → in-app browser; honor `autoOpen`). Until you have navigated there *this* turn, don't tell the user a doc is "open" / "on screen" — at most, say the preview may still be on the doc you opened earlier.
+
+**`previewUrl: null` only means "no UI reachable" on the two attach-warning tools: `write` / `edit`.** Workflow tools return prose and don't carry `previewUrl`. `delete` / `move` emit `previousPreviewUrl` (different field, for closing stale tabs) and don't fire attach warnings. `preview_url` auto-starts the backend on demand (same `OK_MCP_AUTOSTART` gate as writes; a cold first call can take seconds) and reports `running: false` + `url: null` only when no UI could be reached — its hint names the right command.
 
 If you see `"Hocuspocus server is not running"`, run `ok start` and retry.
 
@@ -107,13 +129,15 @@ OK Electron and `ok ui` share `ui.lock`; when a second UI binds a different port
 
 Call `write` / `edit` as soon as you have content. Native `Edit` / `sed` / direct `Write` on in-scope markdown is forbidden — it bypasses the CRDT and loses agent attribution in the shadow repo.
 
+**Persist incrementally — the knowledge base IS your checkpoint (MUST).** On any multi-step or long-running task — a research sweep, a multi-source synthesis, a batch of docs — write completed work to the KB as you finish each unit: per section, per source, per doc. Never hold finished findings only in your context waiting for one final write at the end. A rate limit, crash, or context compaction mid-task discards everything still unwritten; work already persisted to a doc survives, and you resume by reading the doc back instead of redoing the work. Create the target doc early (skeleton + frontmatter), then `edit` each section in as it firms up. Completed, paid-for work that existed only in context and got dropped on a rate limit is the exact failure this rule prevents — the KB is where work goes to be safe, not a thing you save to once at the finish line.
+
 **Pass a `summary` on every content write (SHOULD).** `write`, `edit`, and `move` each take a one-line `summary` (≤80 chars) describing the user-facing outcome of the change — "Add gear list and permit info", not "edited trip doc". It renders as a bullet under your name in the document timeline and is the only human-readable change-note persisted to the shadow-repo history; omit it and the timeline shows *that* you wrote but not *what changed*. Write it from the reader's perspective, keep it specific, and avoid secrets or PII (it lands in git history). Each entry in the batch `documents:` form carries its own `summary`.
 
 **Reach for visual structure where it aids comprehension.** Default to the right OK primitive over flat prose: a Callout (`> [!NOTE]`) for a key caveat, a ` ```mermaid ` diagram for a process or relationship, a table for options or comparisons, an `html preview` chart for numbers. **Call the `palette` MCP tool as you draft** (and `palette({ components })` for a canonical's JSX schema) — it returns copy-ready markdown-native forms, themed `html preview` embed starters, and the theme tokens, so the visual lands themed and in the content graph instead of hand-rolled. Don't decorate — use a visual only when it carries the point better than prose would. Full catalog: §Components.
 
-**Content-divergence warning (Site A gate).** `write` and `edit` responses may include a content-divergence warning when the converged Y.Text doesn't match the bytes the payload composed to (concurrent peer left residue, or — rare — a primitive regression). The write still landed; on this signal, re-read the doc (`exec("cat <path>")`) to see what actually converged before continuing. Single-doc shape: `structuredContent.document.contentDivergence = { kind: "content-divergence", intendedBytes, actualBytes, byteDelta, hint }` (the result nests under the `document` target key, mirroring the input). Batch shape: per-doc `structuredContent.documents[].contentDivergence` with the same fields. Distinct from the preview-attach `warning` field (`action: "attach-preview-once" | "start-ui"`), which stays at the top level — separate keys, can coexist.
+**Advisory warnings on writes.** `write` and `edit` responses may include `structuredContent.document.warnings` (batch: per-doc `structuredContent.documents[].warnings`) — advisory entries discriminated by `kind`, each also summarized as a `⚠` line in the response text. The write always landed; the entries tell you what to do next. Write-integrity kinds mean re-read the doc (`exec("cat <path>")`) before continuing: `content-divergence` (`{ kind, intendedBytes, actualBytes, byteDelta, hint }` — the converged Y.Text doesn't match what the payload composed to: concurrent peer residue, or — rare — a primitive regression) and `disk-edit-reconciled` (an out-of-band disk edit was folded in before your write landed on top). The renderability kind `mermaid-parse-error` (`{ kind, fenceIndex, fenceFirstLine, message, line? }`) means that mermaid fence will not render — fix the fence and re-edit. (A deprecated single-valued `warning` field on the HTTP body mirrors the highest-precedence integrity entry for older consumers.) Distinct from the preview-attach `warning` field (`action: "attach-preview-once" | "start-ui"`), which stays at the top level — separate keys, can coexist.
 
-To author an MDX doc (the KB renders MDX/JSX components), pass a `.mdx` path on the create: `write({ document: { path: "guides/widget.mdx", content, position: "replace" } })` lands `guides/widget.mdx`. A `.md` or extension-less path lands `.md`. An existing doc keeps its on-disk extension regardless of the suffix you pass — changing it in place isn't available via the MCP today.
+To author an MDX doc (the KB renders MDX/JSX components), set `extension: ".mdx"` on the create: `write({ document: { path: "guides/widget", content, extension: ".mdx", position: "replace" } })` lands `guides/widget.mdx`. A `.mdx` suffix typed into `path` works too (the `extension` field wins if you pass both); omit both and it lands `.md`. An existing doc keeps its on-disk extension regardless — changing it in place isn't available via the MCP today.
 
 To delete a doc, call `delete({ document })` — never `rm` / `unlink` / native `Bash` removal on in-scope markdown. The MCP path closes open agent sessions and unloads the doc from Hocuspocus before unlinking; native `rm` desynchronizes those. Deletion is irreversible — call `checkpoint()` first if you may need to roll back (it snapshots the whole project; afterwards restore the doc via `restore_version({ document, version })`, finding the `version` in `history`), and `links({ kind: "backlinks", document })` first if you want to fix referrers that will become redlinks. To move or rename a doc instead of delete + rewrite, use `move({ from, to })` — it auto-detects document vs folder vs asset and rewrites incoming references atomically.
 
@@ -156,7 +180,7 @@ OK auto-promotes markdown-native syntax into themed canonical components at pars
 | --- | --- | --- |
 | Callout / admonition | `> [!NOTE]` + body — 15 types (NOTE, TIP, IMPORTANT, WARNING, CAUTION, …); append `+` / `-` (`> [!NOTE]+`) to make it foldable | themed Callout |
 | Collapsible section | `<details><summary>Title</summary>` … `</details>` | themed Accordion |
-| Diagram | a ` ```mermaid ` fenced block (flowchart, sequence, class, state, ER, gantt, pie) | Mermaid diagram |
+| Diagram | a ` ```mermaid ` fenced block (flowchart, sequence, class, state, ER, gantt, pie) — label-text pitfalls + escapes: `palette({ components: ["Mermaid"] })`; parse failures come back as `warnings` entries on write/edit | Mermaid diagram |
 | Math | `$x$` inline, `$$…$$` block | KaTeX Math |
 | Inline a doc or asset | `![[file]]` | wiki embed |
 
@@ -232,6 +256,7 @@ Knowledge-base docs are factual artifacts — whether the project is a wiki, an 
 ## Media — images and attachments
 
 - **Markdown syntax only:** `![alt text](./path/to/image.png)`. Do NOT emit HTML `<img>` tags — they don't participate in OK's content graph and don't render consistently across Fumadocs / preview surfaces. Paths resolve relative to the doc.
+- **Always a doc-relative path — never a server URL.** Reference an asset by its path relative to the doc (`./image.png`, `../assets/foo.png`), never an absolute `http://localhost:<port>/…`, `127.0.0.1`, or other server URL. `preview_url`'s `url` navigates the *preview* — it is NOT an asset path; never paste it (or any `localhost` base) into an `![]()`. An asset already in the tree is the same rule: find its path with `exec("ls -A <dir>")` and write the relative link. (Upload via `write({ asset })` hands you the exact relative `![alt](ref)` to copy.)
 - **Save locally, don't hot-link.** Hot-linked external image URLs rot when the source disappears. Fetch (`WebFetch` / `curl`), save to a local path, reference via relative markdown link, cite the source below.
 - **Placement model.** Free-form image embeds → co-located alongside the referencing doc (sha256 same-directory dedup). Raw sources via `ingest` → `external-sources/<slug>.<ext>` + `external-sources/<slug>.md` (the wrapper-binary pair). Check via `exec("ls -A")` if the project uses a different convention.
 - **Cannot fetch** (no network, paywall) → don't invent a local path. Omit, or mark inline `(TODO: image needs sourcing from <URL>)`.
@@ -391,6 +416,8 @@ Body is just the wiki-embed. PDFs/opaque attachments render as a click-dispatchi
 
 When you make a multi-step change (batch of new docs, folder restructure), pause between steps to let the browser preview catch up. The CRDT edit streams live; the preview follows your edit cadence. Don't batch 10 writes in a row — interleave the writes so the user watching the browser sees the narrative progress.
 
+This does not conflict with *Persist incrementally* (§Writing): a checkpoint-write per section/source is naturally spaced by the work that produces that unit (read a source → write its findings → read the next), so those writes *are* the interleaved cadence. The anti-pattern is firing many writes back-to-back with no intervening work — not persisting completed work as you go. When in tension, durability wins: never hold finished work back from the KB to smooth cadence.
+
 This is primarily a human-watchability concern — the user watches edits land in the preview; interleaved cadence makes the narrative legible. When the batch is done, navigate the preview to the primary deliverable (see "End a turn on the deliverable" in §Preview).
 
 **Hub docs.** Don't *create* `INDEX.md` / `README.md` hub files solely to catalog children — `exec("ls -A <folder>")` returns the same view live, with per-file frontmatter + backlink counts. But if a hub doc *already exists* from prior work, keep it updated as children change — interleave: write child → update hub → write next child, rather than batching five child edits and a single trailing hub update.
@@ -411,12 +438,13 @@ The skill carries the trigger ("KB content changed this turn — go look"). The 
 | Find every literal occurrence of a phrase       | `Grep: "pattern" *.md`                                                             | `exec("grep -rn pattern <dir>")` (literal, grouped by file, with frontmatter)     |
 | Read an individual doc                          | `Read: specs/foo/SPEC.md`                                                          | `exec("cat specs/foo/SPEC.md")`                                                   |
 | Explore a markdown-heavy dir                    | `Agent(Explore): "..."`                                                            | Do `exec`-based exploration yourself                                              |
+| Answer a direct business question from the corpus | answer in chat and move on (it evaporates), OR save every answer as a new doc      | answer with citations; *offer* to persist only when durable + multi-doc + not already covered (§Answering direct questions) |
 | Wait for the server to tell you to open preview | Skip the session-start preview open and wait for the `attach-preview-once` hint    | Open the preview browser at session start; the hint is a fallback when you didn't |
 | Ignore the attach hint                          | Skip the `warning: { action: "attach-preview-once" }` hint in write-tool responses | Open the preview when the hint fires (`preview_start`, or `preview_url`); otherwise do nothing |
 | Make the Claude Code Desktop preview work       | Read / diagnose / edit `.claude/launch.json` (host-managed config)                 | Call `preview_start("open-knowledge-ui")` and nothing else; the OK lock-collision proxy bridges any port mismatch transparently |
 | Open a doc in the app from the Claude Code CLI  | Print the `previewUrl` / `openknowledge://` string for the user to click           | Run `ok open <doc>` — it opens the OK Desktop app (folders open in the browser), with browser fallback |
 | Reference another doc                           | `` `[text](./page.md)` `` (backticked) or HTML `<a>`                               | `[text](./page.md)` (raw markdown)                                                |
-| Embed an image                                  | `<img src="...">` (HTML) or hot-linked external URL                                | Fetch + save locally + `![meaningful alt](./assets/images/path)`                  |
+| Embed an image                                  | `<img src="...">` (HTML), a `localhost:<port>` / `preview_url` server URL, or hot-linked external URL | Fetch + save locally + doc-relative `![meaningful alt](./assets/images/path)`     |
 | Write a factual claim in a KB doc               | plausible prose without citation, OR inline `[source](https://URL)`                | `ingest` the source first, then cite the local path per Grounding                  |
 | Cite a web source you just fetched              | inline `[source](https://...)` because YOU did the fetch (not the user)            | `ingest` it — agent-initiated fetches are not exempt from the closed-loop rule    |
 | Finish a turn that changed KB content           | move on without checking for a log                                                 | check for a `log.md` and follow its contract per Log discipline                    |
@@ -455,7 +483,20 @@ Typical day-2 flow: user shares a URL → `ingest` (preserve) → user asks "now
 
 **Repeat invocations.** The `workflow` tool returns its full instructional body on every call, including 2nd / 3rd / Nth invocation in the same session. If you've already received a tool's body earlier this session, you can skim the repeat for changes (the body can evolve across server versions) but you don't need to re-internalize it — proceed to the next step with the new arguments.
 
-**Project scaffolding — two paths.** **Empty repo:** run `ok seed` once from a terminal (scaffolds Karpathy three-layer + seeds `log.md` + registers folder defaults). **Existing content:** invoke `workflow({ kind: 'discover' })` (table above — extracts conventions from siblings, sets folder frontmatter + templates, curates `.okignore`, activates link graph; per-phase confirmation gates). Neither is required; the four workflow kinds work against any folder structure. Only mention each when explicitly relevant.
+**Project scaffolding — two paths.** **Empty repo:** run `ok seed` once from a terminal (scaffolds the layout + seeds `log.md` + folder defaults). **Existing content:** invoke `workflow({ kind: 'discover' })` (table above). Neither is required; the four workflow kinds work against any folder structure. Only mention each when explicitly relevant.
+
+**Starter packs — reference for inspiration.** The `ok` CLI (a Bash surface beside the MCP tools; other verbs `ok start` / `ok open` are documented above) ships proven layouts you can study to build a *similar* structure of your own — adapt the idea, don't clone the pack:
+
+- `knowledge-base` — source-grounded research articles
+- `software-lifecycle` — proposals, decisions, specs
+- `codebase-wiki` — agent-authored wiki of your codebase
+- `plain-notes` — notes + daily journal
+- `worldbuilding` — fiction story wiki
+- `writing-pipeline` — drafts → published
+- `entity-vault` — people / companies / meetings (personal CRM)
+- `okf` — Open Knowledge Format–conformant base
+
+To reference one **without installing it**: `ok seed --list-packs` (the menu) → `ok seed --pack <name> --dry-run` (its folders + the *why* of each folder + templates; writes nothing). Then either adapt the ideas into your own folders (`write({ folder })` + a template) or adopt the pack as-is by re-running without `--dry-run`. Reach for this when a user wants structure and an archetype fits — propose a tailored variant, not a verbatim copy.
 
 ## Server lifecycle
 
@@ -468,3 +509,5 @@ Open Knowledge looks for documents under the resolved `content.dir` (discoverabl
 Default mental model (no jargon): **every `.md` and `.mdx` under `content.dir`** not excluded by `.gitignore` or `.okignore` is an Open Knowledge document — including under `specs/`, `reports/`, `docs/`, etc. Read `.okignore` (and any nested `.okignore` files) once per turn to know what's excluded.
 
 **First session in this project?** If substantial folders have no frontmatter of their own and no `templates_available`, the project isn't onboarded — invoke `workflow({ kind: 'discover' })` before writing.
+
+**Working in a git worktree?** Pass the worktree's absolute path as `cwd` on your OK tool calls once — it sticks for the rest of the session, so reads, writes, and the preview all target that worktree instead of the main checkout. If a tool warns that it routed to the main checkout while you're in a worktree, passing `cwd` once is the fix.
