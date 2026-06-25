@@ -77,6 +77,7 @@ flowchart TD
 - Choosing for **surf quality + reliability** → **Costa Rica** (Tamarindo/Nosara to stay forgiving; Santa Teresa to push). See [Costa Rica proposal](../trips/surf-costa-rica-nosara.md).
 - Choosing for **gentle learning + an easy Lisbon finish** → **Ericeira**, accepting smaller/variable waves. See [Portugal proposal](../trips/surf-portugal-ericeira.md).
 - Choosing for **a world-class city** with surf as a bonus → **San Sebastián**, knowing some days may be flat. See [San Sebastián proposal](../trips/surf-san-sebastian-independent.md).
+- Considering **Nicaragua** (next door — cleaner all-day waves, fewer crowds, cheaper) → see [Nicaragua vs Costa Rica](./nicaragua-vs-costa-rica.md): better surf, but weigh the **Level 3 advisory** + connecting flights.
 
 ## Open questions
 

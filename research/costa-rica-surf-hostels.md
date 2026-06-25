@@ -4,9 +4,10 @@ sources:
   - external-sources/costa-rica-surf-hostels.md
   - external-sources/surf-independent-lessons-rentals.md
   - external-sources/surf-conditions-august.md
+  - external-sources/cr-don-jons-lost-boyz.md
 created: 2026-06-02
 author: Miles Kaming-Thanassi
-tags: [research, provisional, surfing]
+tags: [ research, provisional, surfing ]
 ---
 
 ## Question
@@ -52,6 +53,23 @@ Find **surf hostels in Costa Rica, preferably locally/Tico-owned, with lesson + 
 > - **Skip if local ownership matters:** Selina (chain).
 
 This combo (independent hostel + Tico school) typically runs **~$13–25/night lodging + $60 lesson + $15–25/day board** — the cheapest and most local way to do the [Costa Rica week](../trips/surf-costa-rica-nosara.md). See also [August conditions](./surf-conditions-august.md): Sámara/Tamarindo gentlest, Santa Teresa punchiest.
+
+## Santa Teresa head-to-head: Don Jon's vs Lost Boyz
+
+Two popular Santa Teresa surf stays — both steps from the beach, both all-levels — but aimed at different travelers ([src](../external-sources/cr-don-jons-lost-boyz.md)).
+
+| | **Don Jon's Surf & Yoga Lodge** | **Lost Boyz Hostel & Surf Camp** |
+| --- | --- | --- |
+| **Vibe** | Chill, yoga, "relax to the max"; couples/families + backpackers | Social/party backpacker community; pool parties, bar |
+| **Location** | ~100 m to beach; ST beach break "a few steps away" | Across from beach; 3-min walk, 5 min to best breaks |
+| **Rooms** | Apartments (AC) · private teak cabins · AC hostel beds; **~$60–90/nt** private | **Dorms from ~$22/nt** + private rooms; pool, treehouse |
+| **Surf model** | **Bundled camp** (5+ days: lodging + daily breakfast + daily lesson + board) | **À-la-carte packs** ($250–650/wk: 2–5 lessons + 7-day board rental); lodging separate |
+| **Lessons** | Private 1:1 ~$60; local certified instructors | Included in packs; transport + rashguard + sunblock |
+| **Extras** | Free yoga, on-site restaurant | Pool, bar, ATV, Isla Tortuga, bioluminescence, photo/video |
+| **Best for** | Couples/families; calm + comfort + simplicity | Young, social, budget; flexibility + nightlife |
+
+> [!TIP]
+> For a 2–4-person advancing-beginner group: **Lost Boyz** if you want social/lively + budget + flexible lessons (and don't mind a party hostel); **Don Jon's** if you want a calmer, more comfortable base with bundled daily coaching + yoga. Both sit on Santa Teresa's **punchier beach break**, so book coached **morning** sessions either way ([August conditions](./surf-conditions-august.md)). Neither is confirmed Tico-owned — if local ownership matters, see the confirmed-local schools above.
 
 ## Open questions
 
